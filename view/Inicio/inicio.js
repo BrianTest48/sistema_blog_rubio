@@ -5,6 +5,24 @@ var segmento = 10;
 var ruta = 'https://admin.alexrubiosanmiguel.com/assets/img/';
 
 $(document).ready(function() {
+    $.ajax({
+        type: 'POST',
+        url: '../../controller/tagcontrolador.php?op=listar_tag', 
+        dataType : 'JSON',
+        success: function(data) {
+
+            data.forEach(function(tag) {
+                var html = '<a href="#" onclick="MostrarTag(`'+tag.nombre+'`)">'+ tag.nombre +'</a>';          
+                $('.tags-container').append(html);
+            });
+            
+            
+            
+        },
+        error: function(xhr, status, error) {
+            console.error(xhr.responseText); // Manejo de errores
+        }
+    });
 
     $.ajax({
         type: 'POST',
@@ -102,6 +120,16 @@ $(document).ready(function() {
             });
         }
     });
+
+     // Obtener el parámetro "tag" de la URL
+     var urlParams = new URLSearchParams(window.location.search);
+     var tag = urlParams.get('tag');
+ 
+     // Verificar si se recibió el parámetro "tag"
+     if (tag) {
+         // Realizar la solicitud AJAX con el parámetro "tag"
+         MostrarTag(tag);
+     }
 });
 
 function mostrarArticulos() {
@@ -136,6 +164,26 @@ function mostrarArticulos() {
         // Agregar el HTML al nuevo contenedor de artículos
         $('#articulos').append(html);
     }
+}
+
+function MostrarTag(valor){
+    console.log(valor);
+
+    $.ajax({
+        type: 'POST',
+        url: '../../controller/articulocontrolador.php?op=listar_tags',
+        data : { tag : valor }, 
+        dataType : 'JSON',
+        success: function(data) {
+            console.log(data);
+
+            registrosJSON = data;
+            mostrarArticulos();
+        },
+        error: function(xhr, status, error) {
+            console.error(xhr.responseText); // Manejo de errores
+        }
+    });
 }
 
 

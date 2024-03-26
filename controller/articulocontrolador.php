@@ -8,6 +8,11 @@
 
     /* Opcion de solicitud de controller */
     switch($_GET["op"]){
+        case "listar_tags":
+            $datos=$articulo->get_articulos_tag($_POST['tag']);
+            
+            echo json_encode($datos);
+        break;
        
         case "listar":
                 $datos=$articulo->get_articulos();

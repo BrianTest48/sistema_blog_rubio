@@ -45,8 +45,8 @@
             
             <div class="masterpb-social col-xs-4">
                 <a href="http://admin.alexrubiosanmiguel.com/" style="margin-right: 15px;">INICIAR SESION</a>
-                <a href="https://www.facebook.com/profile.php?id=100092524513379&mibextid=LQQJ4d"><i class="icon-facebook5"></i></a>
-                <a href="https://twitter.com/AlexRubioAI"><i class="icon-twitter4"></i></a>
+                <!-- <a href="https://www.facebook.com/profile.php?id=100092524513379&mibextid=LQQJ4d"><i class="icon-facebook5"></i></a>
+                <a href="https://twitter.com/AlexRubioAI"><i class="icon-twitter4"></i></a> -->
                 <!-- <a href="#"><i class="icon-google-plus"></i></a> -->
             </div>
         </div><!-- masterpb-container -->

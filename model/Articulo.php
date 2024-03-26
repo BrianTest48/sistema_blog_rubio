@@ -10,6 +10,16 @@
             return $resultado=$sql->fetchAll();
         }
 
+        public function get_articulos_tag($tag){
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT * FROM articulos WHERE tag = ?  ORDER BY id DESC";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $tag);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
         public function get_last_articulos(){
             $conectar = parent::conexion();
             parent::set_names();

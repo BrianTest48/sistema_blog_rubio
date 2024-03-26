@@ -39,7 +39,7 @@
                         <img src="../../assets/img/imagencontacto.jpeg" alt="post image 1" id="cont_imagen">
                     </div>
                     <div class="post-text">
-                        <p class="text" id="cont_mensaje">Alex Rubio - San Miguel Bienvenidos a mi blog, donde exploraré cómo la tecnología puede transformar y mejorar nuestro entorno, centrándome específicamente en cómo un distrito puede prosperar y evolucionar con la implementación de soluciones tecnológicas innovadoras! Acompáñenme mientras analizo estrategias, tendencias y casos de estudio que demuestran cómo la tecnología puede impulsar el desarrollo, la eficiencia y la calidad de vida en un distrito. ¡Juntos, descubriremos las infinitas posibilidades de construir comunidades más inteligentes y conectadas!</p>
+                        <p class="text" id="cont_mensaje" style="font-size: 15px;">Alex Rubio - San Miguel Bienvenidos a mi blog, donde exploraré cómo la tecnología puede transformar y mejorar nuestro entorno, centrándome específicamente en cómo un distrito puede prosperar y evolucionar con la implementación de soluciones tecnológicas innovadoras! Acompáñenme mientras analizo estrategias, tendencias y casos de estudio que demuestran cómo la tecnología puede impulsar el desarrollo, la eficiencia y la calidad de vida en un distrito. ¡Juntos, descubriremos las infinitas posibilidades de construir comunidades más inteligentes y conectadas!</p>
 
 
                         <!-- <ul class="bullet">
@@ -122,17 +122,6 @@
                     <a class="widget-title" href="#">Tags</a>
                 </h3>
                 <div class="tags-container">
-                    <a href="#">Audio</a>
-                    <a href="#">Viaje</a>
-                    <a href="#">Comida</a>
-                    <a href="#">Eventos</a>
-                    <a href="#">Video</a>
-                    <a href="#">Diseño</a>
-                    <a href="#">Deporte</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Post</a>
-                    <a href="#">Imagenes</a>
-                    <a href="#">Memorias</a>
                 </div>
                 <div class="clearfix"></div>
             </div>

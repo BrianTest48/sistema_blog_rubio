@@ -2,6 +2,24 @@ var ruta = 'https://admin.alexrubiosanmiguel.com/assets/img/';
 var ruta_cont = 'https://admin.alexrubiosanmiguel.com/assets/acercademi/';
 
 $(document).ready(function() {
+    $.ajax({
+        type: 'POST',
+        url: '../../controller/tagcontrolador.php?op=listar_tag', 
+        dataType : 'JSON',
+        success: function(data) {
+
+            data.forEach(function(tag) {
+                var html = '<a href="#" onclick="MostrarTag(`'+tag.nombre+'`)">'+ tag.nombre +'</a>';          
+                $('.tags-container').append(html);
+            });
+            
+            
+            
+        },
+        error: function(xhr, status, error) {
+            console.error(xhr.responseText); // Manejo de errores
+        }
+    });
 
     //Obtener Datos del Modulo
     $.ajax({
@@ -11,7 +29,7 @@ $(document).ready(function() {
         dataType : 'JSON',
         success: function(data) {
             //$('#respuesta').html(response); // Mostrar la respuesta del servidor en un div
-            console.log(data); 
+            //console.log(data); 
             $('#acer_imagen').attr('src', ruta_cont + data.imagen );
             $('#acer_mensaje').html(data.mensaje);
             
@@ -121,6 +139,12 @@ function formatearFecha(valor) {
     return fechaFormateada;
 }
 
+function MostrarTag(valor){
+    console.log(valor);
+    var parametro = "tag=" + encodeURIComponent(valor); // Codificar el valor del parámetro
+    window.location.href = "../Inicio?" + parametro;
+
+}
 
 // Función para agregar la clase 'active' al enlace correspondiente
 function setActiveLink() {

@@ -123,17 +123,7 @@
                         <a class="widget-title" href="#">Tags</a>
                     </h3>
                     <div class="tags-container">
-                        <a href="#">Audio</a>
-                        <a href="#">Viaje</a>
-                        <a href="#">Comida</a>
-                        <a href="#">Eventos</a>
-                        <a href="#">Video</a>
-                        <a href="#">Diseño</a>
-                        <a href="#">Deporte</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Post</a>
-                        <a href="#">Imagenes</a>
-                        <a href="#">Memorias</a>
+                        
                     </div>
                     <div class="clearfix"></div>
                 </div>
