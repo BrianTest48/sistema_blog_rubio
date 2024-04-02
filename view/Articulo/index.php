@@ -16,14 +16,22 @@
         #text_post p {
             text-align: justify;
             font-family: 'Source Sans Pro';
-            /* Justificar el texto dentro de los elementos p */
         }
+
+        /* #text_post span {
+            text-align: justify;
+            font-family: 'Source Sans Pro';
+        } */
 
         #text_post img {
             display: block;
             /* Asegurar que las imágenes sean bloques */
             margin: 0 auto;
             /* Centrar las imágenes horizontalmente */
+        }
+
+        #text_post * {
+            text-align: justify;
         }
     </style>
 </head>

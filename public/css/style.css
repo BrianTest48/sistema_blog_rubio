@@ -1303,7 +1303,8 @@ ul.bullet {
 	border: 1px solid #3bbff1;
     display: inline-block;
     font-size: 12px;
-    height: 30px;
+    /*height: 30px;*/
+	height: 40px;
     line-height: 34px;
     margin: 5px;
     transition: all 0.3s ease 0s;
@@ -2276,7 +2277,7 @@ footer .widget {
 		padding: 0;
 	}
 	.post-full-width article, .post-with-right-sidebar article, .post-with-left-sidebar article {
-		padding: 25px;
+		padding: 2px;
 	}
 	.post-full-width .box-data-info .date, .post-with-right-sidebar .box-data-info .date, .post-with-left-sidebar .box-data-info .date {
 		font-size: 10px;

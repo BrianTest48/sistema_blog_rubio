@@ -45,7 +45,7 @@ $(document).ready(function() {
         dataType : 'JSON',
         success: function(data) {
             //$('#respuesta').html(response); // Mostrar la respuesta del servidor en un div
-            console.log(data);
+            //console.log(data);
 
             data.forEach(function(post) {
                 var html = '<div class="item">';
@@ -213,6 +213,11 @@ function setActiveLink() {
             link.classList.remove('active');
         }
     });
+}
+
+function Seguir(valor){
+    window.location.href = "../Articulo/index.php?id=" + encodeURIComponent(valor);
+
 }
 
 // Ejecutar la función al cargar la página

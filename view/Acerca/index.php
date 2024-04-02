@@ -109,11 +109,11 @@
 
 
                 <!-- ADVERTISING -->
-                <div class="widget advertising">
+                <!-- <div class="widget advertising">
                     <div class="advertising-container">
                         <img src="../../public/img/350x300.png" alt="banner 350x300">
                     </div>
-                </div>
+                </div> -->
 
 
                 <!-- NEWSLETTER -->

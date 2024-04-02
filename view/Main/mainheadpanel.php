@@ -40,10 +40,16 @@
     }
 
     .texto-truncado {
+        /*width: 250px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; */
         width: 250px; /* Ancho máximo del contenedor */
-        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        white-space: normal; /* Permite que el texto se divida en varias líneas */
         overflow: hidden; /* Oculta el texto que se desborda del contenedor */
         text-overflow: ellipsis; /* Muestra puntos suspensivos cuando el texto se corta */
+        display: block; /* Hace que el contenedor sea un bloque para forzar el salto de línea */
+        text-align: left; /* Alinea el texto a la izquierda */
     }
 
     .post-image-left{

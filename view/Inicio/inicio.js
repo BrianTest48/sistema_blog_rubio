@@ -148,7 +148,7 @@ function mostrarArticulos() {
             html += '<div class="container-post column-left col-xs-6">';
         }
         html += '<article>';
-        html += '<h3><a href="#">' + registro.titulo + '</a></h3>';
+        html += '<h3><a href="#" onclick="Seguir('+registro.id+')">' + registro.titulo + '</a></h3>';
         html += '<div class="post-image"><img class="image-articulo" src="'+ ruta + registro.thumb + '" alt="post image"></div>';
         html += '<div class="post-text">';
         html += '<span class="date info">' +formatearFecha(registro.fecha) + '</span>';

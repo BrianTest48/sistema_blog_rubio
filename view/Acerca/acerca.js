@@ -160,5 +160,9 @@ function setActiveLink() {
     });
 }
 
+function Seguir(valor){
+    window.location.href = "../Articulo/index.php?id=" + encodeURIComponent(valor);
+}
+
 // Ejecutar la función al cargar la página
 window.onload = setActiveLink;

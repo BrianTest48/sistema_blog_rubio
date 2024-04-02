@@ -26,7 +26,7 @@ $(document).ready(function() {
     var valorParametro = parametros.get("id");
 
     // Hacer lo que necesites con el valor del parámetro
-    console.log("El valor del parámetro es:", valorParametro);
+    //console.log("El valor del parámetro es:", valorParametro);
 
 
     $.ajax({

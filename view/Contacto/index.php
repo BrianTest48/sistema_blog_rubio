@@ -94,7 +94,6 @@
                     <a class="widget-title" href="#">Ultimos Posts</a>
                 </h3>
                 <div class="posts-container" id="post-container">
-
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -128,11 +127,11 @@
 
 
             <!-- ADVERTISING -->
-            <div class="widget advertising">
-                <div class="advertising-container">
-                    <img src="../../public/img/350x300.png" alt="banner 350x300">
-                </div>
-            </div>
+                <!-- <div class="widget advertising">
+                    <div class="advertising-container">
+                        <img src="../../public/img/350x300.png" alt="banner 350x300">
+                    </div>
+                </div> -->
 
 
             <!-- NEWSLETTER -->
